@@ -78,6 +78,7 @@ else {
 console.log(mostPets);
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+mostPets = 0; //(resets the value to show functionality)
 switch (pets) {
   case pets < friendsPets:
     break;
