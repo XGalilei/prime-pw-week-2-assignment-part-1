@@ -72,8 +72,11 @@ let mostPets = 0;
 if(pets < friendsPets){
   mostPets = friendsPets;
 }
-else {
+else if (pets > friendsPets) {
   mostPets = pets;
+}
+else {
+  mostPets = pets + `*`; // '*' indicates that 'pets' and 'friendsPets' are the same value
 }
 console.log(mostPets);
 
@@ -87,7 +90,7 @@ switch (pets) {
     mostPets = pets;
     break;
   default:
-    mostPets = pets;
+    mostPets = pets + `*`; //see comment in line 79
 }
 console.log(mostPets);
 
