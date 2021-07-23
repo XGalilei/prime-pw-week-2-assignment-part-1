@@ -81,8 +81,13 @@ console.log(mostPets);
 mostPets = 0; //(resets the value to show functionality)
 switch (pets) {
   case pets < friendsPets:
+    mostPets = friendsPets;
+    break;
+  case pets > friendsPets:
+    mostPets = pets;
     break;
   default:
+    mostPets = pets;
 }
 console.log(mostPets);
 
